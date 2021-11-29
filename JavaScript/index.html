@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>FORM VALIDATION</title>
+    <link rel="stylesheet" href="styles/formValidation.css">
+    <script src="script/frormValidation.js"></script>
+</head>
+
+<body>
+    <h1 id="hd">Submit your application</h1>
+    <p id="hd"><span id="spn">for</span> .Net Developer(Fresher)</p>
+    <div>
+        <form>
+            <h4>Personal Information</h4>
+            <label id="id">Name as per in Id proof*</label>
+            <br>
+            <input type="text" id="name" placeholder="Name">
+            <label id="id1"></label><br>
+            <br>
+            <label>Father's Name*</label>
+            <br>
+            <input type="text" id="names" placeholder="FatherName">
+            <label id="id2"></label>
+            <br>
+            <br>
+            <label>Email*</label><br>
+            <input type="text" id="mail" placeholder="Email">
+            <label id="id3"></label><br>
+            <br>
+            <br>
+            <label>DateOfBirth*</label><br>
+            <input type="text" id="dob" placeholder="DD-MM-YYYY">
+            <label id="id4"></label><br>
+            <br>
+            <br>
+            <label>Mobile No*</label><br>
+            <input type="text" id="mNo" placeholder="Mobile Number">
+            <label id="id5"></label><br>
+            <br>
+            <br>
+            <div id="currAdd">
+                <label>Current Address*</label><br>
+                <input type="text" id="address" placeholder="Address line 1">
+                <label id="error"></label><br>
+                <br>
+                <input type="text" id="address1" placeholder="Address line 2">
+                <label id="error1"></label><br>
+                 <br>
+                <input type="text" id="address2" placeholder="City">
+                <select id="select">
+                    <option>Tamil Nadu</option>
+                    <option>Karnataka</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Kerala</option>
+                </select>
+                <input type="text" id="code" placeholder="Zip Code">
+                <br>
+                <br>
+                <label id="error2"></label><br>
+
+            </div>
+            <br>
+            <div id="PerAdd"></div>
+            <label>Permanent Address*</label>
+            <input type="checkbox" id="check" onclick="fill()">Same as Current Address</input>
+            <br>
+            <br>
+
+            <input type="text" id="address3" placeholder="Address line 1">
+            <label id="error3"></label><br>
+            <br>
+            <input type="text" id="address4" placeholder="Address line 2">
+            <label id="error4"></label><br>
+            <br>
+    
+            <input type="text" id="address5" placeholder="City">
+            <label id="error5"></label>
+
+            <select id="select1">
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+                <option>Andhra Pradesh</option>
+                <option>Kerala</option>
+            </select>
+            <input type="text" id="code1" placeholder="Zip Code">
+            <label id="error6"></label><br>
+
+    </div>
+    <br>
+    <label>Upload Profile Photo*(JPG/PNG format only)</label>
+    <p>Please Upload a photo of yourself. Your face should be clearly visible. Make sure the image size does not excess
+        500KB</p>
+    <input type="file" id="photo" placeholder="UPLOAD PHOTO">
+    <br>
+    <br>
+    <input type="button" id="sub" value="submit" onclick="validate()"></input>
+
+    </form>
+    </div>
+</body>
+
+</html>
